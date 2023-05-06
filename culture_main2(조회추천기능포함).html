@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메인페이지</title>
+    <title>조회 좋아요 기능있는 메인페이지</title>
     <link rel="stylesheet" href="./culture.css">
+    <script defer src="./culture.js"></script>
 </head>
 <body>
 
@@ -109,6 +110,13 @@
                     <button type="button" class="needblack" id="searchbar2">검색</button>
                     </td>
                 </tr>
+                <td class="lengthlarger"> 조회</td>
+                <td colspan="4">
+                    <input name="aaa" type="checkbox" value="view" class='viewandlike' onclick="doOpenCheck(this);">조회
+                    <input name="aaa" type="checkbox" value="like" class='viewandlike' onclick="doOpenCheck(this);">좋아요 <br />
+                </td>
+
+            </tr>
             </tbody>
             </table>
         <!-- 지역 / 기간 / 분야 / 검색 표 끝 -->
@@ -126,6 +134,10 @@
                                 <div class="date">
                                     <span>2023-04-30</span> ~ <span>2023-04-30</span>
                                 </div>
+                                <div class="viewlike">
+                                    <span>👀1</span>
+                                    <span>❤1</span>
+                                </div>
                             </div>
                         </div>
                         <div class="performance_image">
@@ -135,14 +147,9 @@
                                 <div class="date">
                                     <span>2023-05-26</span> ~ <span>2023-05-28</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="performance_image">
-                            <img src="https://culture.seoul.go.kr/cmmn/file/imageSrc.do?fileStreCours=35367259ca6485b8ea26e64a6b235a53a15d7fe0395f8c12383db80cbddb43e6&streFileNm=c8bf7a3ed80676f19959d525c97b39ffad9dfc36288f971a5bacb5e178aa54a2&thumb=Y">
-                            <div class="txt">
-                                <h2>2023 제25회 서울드럼페스티벌</h2>
-                                <div class="date">
-                                    <span>2023-05-26</span> ~ <span>2023-05-28</span>
+                                <div class="viewlike">
+                                    <span>👀1</span>
+                                    <span>❤1</span>
                                 </div>
                             </div>
                         </div>
@@ -152,6 +159,23 @@
                                 <h2>2023 제25회 서울드럼페스티벌</h2>
                                 <div class="date">
                                     <span>2023-05-26</span> ~ <span>2023-05-28</span>
+                                </div>
+                                <div class="viewlike">
+                                    <span>👀1</span>
+                                    <span>❤1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="performance_image">
+                            <img src="https://culture.seoul.go.kr/cmmn/file/imageSrc.do?fileStreCours=35367259ca6485b8ea26e64a6b235a53a15d7fe0395f8c12383db80cbddb43e6&streFileNm=c8bf7a3ed80676f19959d525c97b39ffad9dfc36288f971a5bacb5e178aa54a2&thumb=Y">
+                            <div class="txt">
+                                <h2>2023 제25회 서울드럼페스티벌</h2>
+                                <div class="date">
+                                    <span>2023-05-26</span> ~ <span>2023-05-28</span>
+                                </div>
+                                <div class="viewlike">
+                                    <span>👀1</span>
+                                    <span>❤1</span>
                                 </div>
                             </div>
                         </div>
@@ -161,6 +185,10 @@
                                 <h2>2023 제25회 서울드럼페스티벌</h2>
                                 <div class="date">
                                     <span>2023-05-26</span> ~ <span>2023-05-28</span>
+                                </div>
+                                <div class="viewlike">
+                                    <span>👀1</span>
+                                    <span>❤1</span>
                                 </div>
                             </div>
                         </div>
@@ -179,6 +207,10 @@
                                     <div class="date">
                                         <span>2023-04-30</span> ~ <span>2023-04-30</span>
                                     </div>
+                                    <div class="viewlike">
+                                        <span>👀1</span>
+                                        <span>❤1</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="festival_image">
@@ -188,14 +220,9 @@
                                     <div class="date">
                                         <span>2023-05-26</span> ~ <span>2023-05-28</span>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="festival_image">
-                                <img src="https://culture.seoul.go.kr/cmmn/file/imageSrc.do?fileStreCours=35367259ca6485b8ea26e64a6b235a53a15d7fe0395f8c12383db80cbddb43e6&streFileNm=c8bf7a3ed80676f19959d525c97b39ffad9dfc36288f971a5bacb5e178aa54a2&thumb=Y">
-                                <div class="txt">
-                                    <h2>2023 제25회 서울드럼페스티벌</h2>
-                                    <div class="date">
-                                        <span>2023-05-26</span> ~ <span>2023-05-28</span>
+                                    <div class="viewlike">
+                                        <span>👀1</span>
+                                        <span>❤1</span>
                                     </div>
                                 </div>
                             </div>
@@ -205,6 +232,23 @@
                                     <h2>2023 제25회 서울드럼페스티벌</h2>
                                     <div class="date">
                                         <span>2023-05-26</span> ~ <span>2023-05-28</span>
+                                    </div>
+                                    <div class="viewlike">
+                                        <span>👀1</span>
+                                        <span>❤1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="festival_image">
+                                <img src="https://culture.seoul.go.kr/cmmn/file/imageSrc.do?fileStreCours=35367259ca6485b8ea26e64a6b235a53a15d7fe0395f8c12383db80cbddb43e6&streFileNm=c8bf7a3ed80676f19959d525c97b39ffad9dfc36288f971a5bacb5e178aa54a2&thumb=Y">
+                                <div class="txt">
+                                    <h2>2023 제25회 서울드럼페스티벌</h2>
+                                    <div class="date">
+                                        <span>2023-05-26</span> ~ <span>2023-05-28</span>
+                                    </div>
+                                    <div class="viewlike">
+                                        <span>👀1</span>
+                                        <span>❤1</span>
                                     </div>
                                 </div>
                             </div>
@@ -214,6 +258,10 @@
                                     <h2>2023 제25회 서울드럼페스티벌</h2>
                                     <div class="date">
                                         <span>2023-05-26</span> ~ <span>2023-05-28</span>
+                                    </div>
+                                    <div class="viewlike">
+                                        <span>👀1</span>
+                                        <span>❤1</span>
                                     </div>
                                 </div>
                             </div>
@@ -232,6 +280,10 @@
                                         <div class="date">
                                             <span>2023-04-30</span> ~ <span>2023-04-30</span>
                                         </div>
+                                        <div class="viewlike">
+                                            <span>👀1</span>
+                                            <span>❤1</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="place_image">
@@ -241,14 +293,9 @@
                                         <div class="date">
                                             <span>2023-05-26</span> ~ <span>2023-05-28</span>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="place_image">
-                                    <img src="https://culture.seoul.go.kr/cmmn/file/imageSrc.do?fileStreCours=35367259ca6485b8ea26e64a6b235a53a15d7fe0395f8c12383db80cbddb43e6&streFileNm=c8bf7a3ed80676f19959d525c97b39ffad9dfc36288f971a5bacb5e178aa54a2&thumb=Y">
-                                    <div class="txt">
-                                        <h2>2023 제25회 서울드럼페스티벌</h2>
-                                        <div class="date">
-                                            <span>2023-05-26</span> ~ <span>2023-05-28</span>
+                                        <div class="viewlike">
+                                            <span>👀1</span>
+                                            <span>❤1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -258,6 +305,23 @@
                                         <h2>2023 제25회 서울드럼페스티벌</h2>
                                         <div class="date">
                                             <span>2023-05-26</span> ~ <span>2023-05-28</span>
+                                        </div>
+                                        <div class="viewlike">
+                                            <span>👀1</span>
+                                            <span>❤1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="place_image">
+                                    <img src="https://culture.seoul.go.kr/cmmn/file/imageSrc.do?fileStreCours=35367259ca6485b8ea26e64a6b235a53a15d7fe0395f8c12383db80cbddb43e6&streFileNm=c8bf7a3ed80676f19959d525c97b39ffad9dfc36288f971a5bacb5e178aa54a2&thumb=Y">
+                                    <div class="txt">
+                                        <h2>2023 제25회 서울드럼페스티벌</h2>
+                                        <div class="date">
+                                            <span>2023-05-26</span> ~ <span>2023-05-28</span>
+                                        </div>
+                                        <div class="viewlike">
+                                            <span>👀1</span>
+                                            <span>❤1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -267,6 +331,10 @@
                                         <h2>2023 제25회 서울드럼페스티벌</h2>
                                         <div class="date">
                                             <span>2023-05-26</span> ~ <span>2023-05-28</span>
+                                        </div>
+                                        <div class="viewlike">
+                                            <span>👀1</span>
+                                            <span>❤1</span>
                                         </div>
                                     </div>
                                 </div>
